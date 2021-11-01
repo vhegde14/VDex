@@ -1,14 +1,21 @@
 import './App.css';
+import MetamaskButton from './components/MetamaskButton';
 import TradingBox from './components/TradingBox';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-		<div id="title" style={{x: 0}}>
-		VDEX
-		</div>
-		<TradingBox />
+      <div id="head" style={{backgroundColor: "#1F2833", paddingTop:"10px", paddingLeft: "20px", paddingRight: "20px"}}>
+        <div id="title" style={{color: "white", fontSize:30, display: 'flex', justifyContent:'center', textAlign:'center'}}>
+          VDEX
+        </div>
+        <div id="button" style={{display: 'flex', justifyContent:'flex-end'}}>
+          <MetamaskButton />
+        </div>
+      </div>
+      <header className="App-header" style={{ backgroundColor: "#1F2833" }}>
+        <TradingBox />
       </header>
     </div>
   );

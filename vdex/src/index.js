@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { MoralisProvider } from 'react-moralis';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MoralisProvider appId="yl2gpaPGk3VN20rORPlGxqrUltljU2lajdgfWgth" serverUrl="https://aer1i5vejkty.usemoralis.com:2053/server" >
+      <App />
+    </MoralisProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

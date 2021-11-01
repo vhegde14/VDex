@@ -12,10 +12,11 @@ function TradingBox() {
                     backgroundColor: '#1E1E1E',
                     borderRadius: "20px",
                     boxShadow: "8px 8px 4px rgba(0, 0, 0, 0.25)",
+                    flexDirection: "column"
                 }}
             >
-                <SwapCoinBox label="Swap From {Coin Name}"/>
-                <SwapCoinBox label="Swap To {Coin Name}"/>
+                <SwapCoinBox label="Swap From"/>
+                <SwapCoinBox label="Swap To"/>
                 <SwapButton />
             </Box>
         </div>

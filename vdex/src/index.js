@@ -4,11 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import keys from './keys';
+
 import { MoralisProvider } from 'react-moralis';
+
+const APP_ID = keys.APP_ID;
+const SERVER_URL = keys.SERVER_URL;
 
 ReactDOM.render(
   <React.StrictMode>
-    <MoralisProvider appId="yl2gpaPGk3VN20rORPlGxqrUltljU2lajdgfWgth" serverUrl="https://aer1i5vejkty.usemoralis.com:2053/server" >
+    <MoralisProvider appId={APP_ID} serverUrl={SERVER_URL} >
       <App />
     </MoralisProvider>
   </React.StrictMode>,
